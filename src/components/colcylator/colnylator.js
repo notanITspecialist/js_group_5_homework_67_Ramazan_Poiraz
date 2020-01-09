@@ -9,7 +9,7 @@ class Colnylator extends Component {
         const operators = ['+','-','*','/'];
         return (
             <div className='calcylator'>
-                <input onChange={this.props.addOne} value={this.props.eval} id='inp' />
+                <input disabled onChange={this.props.addOne} value={this.props.eval} id='inp' />
                 <div className='operators'>
                     {operators.map(oper => <button key={oper} onClick={this.props.addSymbol} value={oper}>{oper}</button>)}
                 </div>
